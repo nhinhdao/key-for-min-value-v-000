@@ -6,12 +6,7 @@ def key_for_min_value(name_hash)
             temp = 1000
             name_hash.each do |key, value|
                   temp = value if value < temp
-            end
-            temp
-            name_hash.each do |key, value|
-                  if value == temp
-                        return key
-                  end
+                  return key if value == temp
             end
             key
       else
